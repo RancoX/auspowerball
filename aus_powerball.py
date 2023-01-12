@@ -1,17 +1,10 @@
 import random
 from collections import Counter
-import pandas as pd
 
 '''
 An Australian powerball simulator that emulate the outcomes and earnings
 '''
 
-# https://www.powerball.net/australia/prizes
-# total_pool_prize=10_000_000
-# prize_table=pd.DataFrame({'Division':range(1,10),'Pool Distribution':[0.35,0.018,0.011,0.02,0.015,0.097,0.076,0.15,0.263]})
-# prize_table['Division']=prize_table['Division'].apply(lambda x:'Division '+str(x))
-# prize_table['Division Prize']=total_pool_prize*prize_table['Pool Distribution']
-# print(prize_table)
 
 # https://australia.national-lottery.com/powerball/dividends
 winning_patterns={
@@ -81,7 +74,7 @@ def outcome_analyzer(winning_combo, player_combo):
 
 if __name__=='__main__':
     # set initial params
-    total_play=100000
+    total_play=10000
     cost_per_play=4.85/4
 
     # initialize winning combo
